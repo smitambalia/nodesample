@@ -22,10 +22,6 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            which node
-            which npm
-            node --version
-            npm --version
             ls
             cd nodesample
             npm install
