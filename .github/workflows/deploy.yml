@@ -22,7 +22,6 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            source ~/.bashrc || source ~/.profile || true
             which node
             which npm
             node --version
