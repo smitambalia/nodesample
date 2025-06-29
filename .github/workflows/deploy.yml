@@ -25,5 +25,7 @@ jobs:
             ls
             cd nodesample
             npm install
-            npm start
+            pm2 start npm --name "nodeapp" -- start
+            pm2 save
+            pm2 status
             echo "Deployment completed successfully"
