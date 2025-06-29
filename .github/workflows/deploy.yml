@@ -22,5 +22,8 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            ls -la
-            
+            ls
+            cd nodesample
+            npm install
+            npm start
+            echo "Deployment completed successfully"          
